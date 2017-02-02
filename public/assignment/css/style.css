@@ -20,13 +20,13 @@ input.form-control {
 }
 
 nav { 
-	background-color: rgb(47, 122, 188);
+	/*color: #FFFFFF;
+	background-color: rgb(47, 122, 188);*/
+	background-color: rgb(6, 68, 122);
+  	background-image: none;
+  	background-repeat: no-repeat;
+
 }
-
-nav a {
-
-}
-
 
 
 
