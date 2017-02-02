@@ -19,10 +19,16 @@ input.form-control {
     margin-bottom: 5px;
 }
 
-nav {
-	font-color: white;
-    background-color: rgb(47, 122, 188);
+nav { 
+	background-color: rgb(47, 122, 188);
 }
+
+nav a {
+
+}
+
+
+
 
 .starter-template {
   padding: 30px 15px;
