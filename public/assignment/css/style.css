@@ -1,7 +1,30 @@
-input.form-control {
+/*input.form-control {
     margin-bottom: 5px;
 }
 
 body {
     padding-top: 36px;
+}*/
+
+body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.top-buffer {
+    margin-top: 30px;
+}
+
+input.form-control {
+    margin-bottom: 5px;
+}
+
+nav {
+	font-color: white;
+    background-color: rgb(47, 122, 188);
+}
+
+.starter-template {
+  padding: 30px 15px;
+  text-align: center;
 }
