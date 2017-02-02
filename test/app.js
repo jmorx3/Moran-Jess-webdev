@@ -7,10 +7,10 @@ module.exports = function(app)
     var connectionString = 'mongodb://127.0.0.1:27017/test';
 
     if(process.env.MLAB_USERNAME) {
-        connectionString = process.env.MLAB_USERNAME + ":" +
-            process.env.MLAB_PASSWORD + "@" +
-            process.env.MLAB_HOST + ':' +
-            process.env.MLAB_PORT + '/' +
+        connectionString = process.env.MLAB_USERNAME + "moran-jess-webdev" +
+            process.env.MLAB_PASSWORD + "ireland5" +
+            process.env.MLAB_HOST + 'mongodb://127.0.0.1:27017/test' +
+            process.env.MLAB_PORT + '80' +
             process.env.MLAB_APP_NAME;
     }
 
