@@ -1,0 +1,71 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Website List</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../css/style.css" rel="stylesheet"/>
+</head>
+<body>
+    <nav class="navbar navbar-normal navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-text pull-left">
+            <a href="#/profile/{{model.userId}}" class="navbar-link">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+            </div>
+            <div class="navbar-text pull-right">
+            <a href="#/user/{{model.userId}}/website/new" class="navbar-link">
+                    <span class="glyphicon glyphicon-plus">
+                    </span>
+                </a>
+            </div>
+            <div class="navbar-header">
+                <a class="navbar-brand">
+                    Websites
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+                <a href="../page/page-list.html">Address Book App</a>
+                <div class="pull-right">
+                    <a href="#/user/{{model.userId}}/website/{{website._id}}">
+                        <span class="glyphicon glyphicon-cog"></span>
+                    </a>
+                </div>
+                <br>
+                <a href="../page/page-list.html">Blogger</a>
+                <div class="pull-right">
+                    <a href="#/user/{{model.userId}}/website/{{website._id}}">
+                        <span class="glyphicon glyphicon-cog"></span>
+                    </a>
+                </div>
+                <br>
+                <a href="../page/page-list.html">Blogging App</a>
+                <div class="pull-right">
+                    <a href="#/user/{{model.userId}}/website/{{website._id}}">
+                        <span class="glyphicon glyphicon-cog"></span>
+                    </a>
+                </div>
+                <br>
+                <a href="../page/page-list.html">Script Testing App</a>
+                <div class="pull-right">
+                    <a href="#/user/{{model.userId}}/website/{{website._id}}">
+                        <span class="glyphicon glyphicon-cog"></span>
+                    </a>
+                </div>
+        </ul>
+    </div>
+    </body>
+
+
+    <nav class="navbar navbar-normal navbar-fixed-bottom">
+        <div class="container-fluid">
+            <div class="navbar-text pull-right">
+                <a href="#/profile/{{model.userId}}">
+                    <span class="glyphicon glyphicon-user"></span>
+                </a>
+            </div>
+        </div>
+    </nav>
