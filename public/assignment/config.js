@@ -5,7 +5,7 @@
 
     function configuration($routeProvider) {
         $routeProvider
-            .when("/login",{
+            .when("/",{
                 templateUrl: 'views/user/templates/login.view.client.html',
                 controller: 'loginController',
                 controllerAs: 'model'
@@ -60,20 +60,11 @@
                 controller: 'WidgetNewController',
                 controllerAs: 'model'
             })
-            .when("/user/:uid/website/:wid/page/:pid/widget/new/heading",{
-                templateUrl: 'views/widgets/templates/widget-heading.view.client.html',
-                controller: 'WidgetNewController',
+            .when("/user/:uid/website/:wid/page/:pid/widget/:wgid",{
+                templateUrl: 'views/widgets/templates/widget-edit.view.client.html',
+                controller: 'WidgetEditController',
                 controllerAs: 'model'
             })
-            .when("/user/:uid/website/:wid/page/:pid/widget/new/youtube",{
-                templateUrl: 'views/widgets/templates/widget-youtube.view.client.html',
-                controller: 'WidgetNewController',
-                controllerAs: 'model'
-            })
-            .when("/user/:uid/website/:wid/page/:pid/widget/new/image",{
-                templateUrl: 'views/widgets/templates/widget-image.view.client.html',
-                controller: 'WidgetNewController',
-                controllerAs: 'model'
-            })
+
     }
 })();

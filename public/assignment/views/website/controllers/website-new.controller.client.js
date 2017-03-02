@@ -9,15 +9,21 @@
         vm.userId = $routeParams['uid'];
 
         function init() {
-            vm.websites = WebsiteService.findWebsitesByUser(vm.userId);
+            var promise = WebsiteService.findWebsitesByUser(vm.userId);
+            promise.success(function (websites) {
+                vm.websites = websites;
+            });
         }
+
         init();
 
         vm.createWebsite = createWebsite;
 
         function createWebsite(website) {
-            WebsiteService.createWebsite(website, vm.userId);
-            $location.url("/user/" + vm.userId + "/website");
+            var promise = WebsiteService.createWebsite(vm.userId, website);
+            promise.success(function(website) {
+                $location.url("/user/" + vm.userId + "/website");
+            });
         }
     }
 })();

@@ -8,12 +8,15 @@
         vm.login = login;
 
         function login(user) {
-            var loginUser = UserService.findUserByCredentials(user.username, user.password);
-            if (loginUser != null) {
-                $location.url('/profile/' + loginUser._id);
-            } else {
-                vm.error = "No such user found!";
+                var promise = UserService.findUserByCredentials(user.username, user.password);
+                promise.success(function (user) {
+                    if (user) {
+                        $location.url('/user/' + user._id);
+                    }
+                }).error(function (error) {
+                    vm.error = 'user does not exist: ' + user.username;
+                });
             }
-        }
     }
 })();
+

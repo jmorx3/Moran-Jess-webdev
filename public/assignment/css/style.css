@@ -1,36 +1,31 @@
-/*input.form-control {
+input.form-control {
     margin-bottom: 5px;
 }
 
 body {
-    padding-top: 36px;
-}*/
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
-body {
-  padding-top: 50px;
-  padding-bottom: 50px;
+nav {
+    background-color: lightblue;
 }
 
 .top-buffer {
     margin-top: 30px;
 }
 
-input.form-control {
-    margin-bottom: 5px;
+.widget {
+    z-index: 0;
+    padding-bottom: 8px;
 }
 
-nav { 
-	/*color: #FFFFFF;
-	background-color: rgb(47, 122, 188);*/
-	background-color: rgb(6, 68, 122);
-  	background-image: none;
-  	background-repeat: no-repeat;
-
-}
-
-
-
-.starter-template {
-  padding: 30px 15px;
-  text-align: center;
+.widget-controls {
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+    border-radius: 0 0 0 10px;
+    background-color: lightblue;
+    z-index: 2;
+    padding: 5px;
 }

@@ -1,0 +1,41 @@
+<nav class="navbar navbar-normal navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-text pull-left">
+            <a href="#/user/{{model.userId}}/website/{{model.websiteId}}/page/{{model.pageId}}/widget" class="navbar-link">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+        </div>
+        <div class="navbar-header">
+            <a class="navbar-brand">
+                Widget Edit
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div ng-switch="model.widget.widgetType">
+        <div ng-switch-when="HEADING">
+            <ng-include src="'views/widgets/templates/editors/widget-heading-editor.view.client.html'"></ng-include>
+        </div>
+        <div ng-switch-when="IMAGE">
+            <ng-include src="'views/widgets/templates/editors/widget-image-editor.view.client.html'"></ng-include>
+        </div>
+        <div ng-switch-when="HTML">
+            <ng-include src="'views/widgets/templates/editors/widget-html-editor.view.client.html'"></ng-include>
+        </div>
+        <div ng-switch-when="YOUTUBE">
+            <ng-include src="'views/widgets/templates/editors/widget-youtube-editor.view.client.html'"></ng-include>
+        </div>
+    </div>
+
+    <a class="btn btn-success btn-block"
+       ng-click="model.updateWidget(model.widget)">
+        Update
+    </a>
+    <a class="btn btn-danger btn-block"
+       ng-click="model.deleteWidget(model.widget._id)">
+        Delete
+    </a>
+</div>
+

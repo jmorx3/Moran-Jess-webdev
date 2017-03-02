@@ -1,10 +1,3 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Page List</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="../css/style.css" rel="stylesheet"/>
-</head>
 <body>
 <nav class="navbar navbar-normal navbar-fixed-top">
     <div class="container-fluid">
@@ -28,43 +21,17 @@
 </nav>
 
 <div class="container-fluid">
-            <a ng-repeat="page in model.pages">Blog Post</a>
+    <ul class="list-group">
+        <li ng-repeat="page in model.pages" class="list-group-item">
+            <a href="#/user/{{model.userId}}/website/{{model.websiteId}}/page/{{page._id}}/widget">{{page.name}}</a>
             <div class="pull-right">
                 <a href="#/user/{{model.userId}}/website/{{model.websiteId}}/page/{{page._id}}">
                     <span class="glyphicon glyphicon-cog"></span>
                 </a>
             </div>
-            <br>
-            <a ng-repeat="page in model.pages">Blogs</a>
-            <div class="pull-right">
-                <a href="#/user/{{model.userId}}/website/{{model.websiteId}}/page/{{page._id}}">
-                    <span class="glyphicon glyphicon-cog"></span>
-                </a>
-            </div>
-            <br>
-            <a ng-repeat="page in model.pages">Home</a>
-            <div class="pull-right">
-                <a href="#/user/{{model.userId}}/website/{{model.websiteId}}/page/{{page._id}}">
-                    <span class="glyphicon glyphicon-cog"></span>
-                </a>
-            </div>
-            <br>
-            <a ng-repeat="page in model.pages">About</a>
-            <div class="pull-right">
-                <a href="#/user/{{model.userId}}/website/{{model.websiteId}}/page/{{page._id}}">
-                    <span class="glyphicon glyphicon-cog"></span>
-                </a>
-            </div>
-            <br>
-            <a ng-repeat="page in model.pages">Contact Us</a>
-            <div class="pull-right">
-                <a href="#/user/{{model.userId}}/website/{{model.websiteId}}/page/{{page._id}}">
-                    <span class="glyphicon glyphicon-cog"></span>
-                </a>
-            </div>
-            <br>
+        </li>
+    </ul>
 </div>
-</body>
 
 <nav class="navbar navbar-normal navbar-fixed-bottom">
     <div class="container-fluid">

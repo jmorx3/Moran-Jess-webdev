@@ -1,28 +1,40 @@
-<head>
-    <meta charset="UTF-8">
-    <title>Register</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="css/style.css" rel="stylesheet"/>
-</head>
 <body>
     <div class="container">
         <h1>Register</h1>
         <br>
-        <input type="text"
-               class="form-control"
-               placeholder="username"/>
+        <input ng-model="model.user.firstName"
+           type="text"
+           class="form-control"
+           placeholder="First Name"/>
                <br>
-        <input type="password"
-               class="form-control"
-               placeholder="password"/>
+        <input ng-model="model.user.lastName"
+           type="text"
+           class="form-control"
+           placeholder="Last Name"/>
                <br>
-        <input type="password"
-               class="form-control"
-               placeholder="verify password"/>
-               <br>
-        <a class="btn btn-success btn-block" href="#/register">
-          Register</a>
-        <a class="btn btn-primary btn-block" ng-click="model.login(user)">
-            Login</a>
+        <input ng-model="model.user.email"
+           type="text"
+           class="form-control"
+           placeholder="E-mail"/>
+                <br>
+        <input ng-model="model.user.username"
+           type="text"
+           class="form-control"
+           placeholder="Username"/>
+                <br>
+        <input ng-model="model.user.password"
+           type="password"
+           class="form-control"
+           placeholder="Password"/>
+                <br>
+        <input ng-model="model.user.confirmPassword"
+           type="password"
+           class="form-control"
+           placeholder="Confirm Password Again"/>
+                <br>
+        <a class="btn btn-primary btn-block" ng-click="model.register(user)">
+            Register</a>
+        <a class="btn btn-danger  btn-block" href="#/">
+            Cancel</a>
     </div>
 </body>
