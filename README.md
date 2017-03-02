@@ -7,7 +7,7 @@ The app is hosted using heroku and pushes to master are automatically deployed.
 
 <b> Developing Locally </b>
 
-Here's how to get up an running on your machine,
+Here's how to get up and running on your machine,
 
 1. git clone https://github.com/jmorx3/moran-jess-webdev.git
 
