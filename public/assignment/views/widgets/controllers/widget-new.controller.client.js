@@ -10,9 +10,9 @@
         vm.pageId = $routeParams['pid'];
 
         function init() {
-            var promise = WebsiteService.findWebsitesByUser(vm.userId);
-            promise.success(function (websites) {
-                vm.websites = websites;
+            var promise = WidgetService.findWidgetsBypageId(vm.pageId);
+            promise.success(function (widgets) {
+                vm.widgets = widgets;
             });
         }
         init();

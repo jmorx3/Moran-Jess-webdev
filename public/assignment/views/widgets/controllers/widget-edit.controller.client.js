@@ -21,6 +21,7 @@
         vm.deleteWidget = deleteWidget;
         vm.updateWidget = updateWidget;
         vm.getEditorTemplateUrl = getEditorTemplateUrl;
+        vm.toSearch = toSearch;
 
         function getEditorTemplateUrl(type) {
             return 'views/widgets/templates/editors/widget-' + type.toLowerCase() + '-editor.view.client.html';
@@ -29,15 +30,19 @@
         function deleteWidget() {
             var deleteWidgetPromise = WidgetService.deleteWidget(vm.widgetId);
             deleteWidgetPromise.success(function() {
-                $location.url("/user/" + vm.userId + "/website/" + vm.websiteId + "/page/" + vm.pageId + "/widget");
+                $location.url("/user/" + vm.uid + "/website/" + vm.wid + "/page/" + vm.pid + "/widget");
             });
         }
 
         function updateWidget(newWidget) {
             var updateWidgetPromise = WidgetService.updateWidget(vm.widgetId, newWidget);
             updateWidgetPromise.success(function() {
-                $location.url("/user/" + vm.userId + "/website/" + vm.websiteId + "/page/" + vm.pageId + "/widget");
+                $location.url("/user/" + vm.uid + "/website/" + vm.wid + "/page/" + vm.pid + "/widget");
             });
+        }
+
+        function toSearch() {
+            $location.url("/user/" + vm.uid + "/website/" + vm.wid + "/page/" + vm.pid + "/widget/" + vm.wgid + "/flickr-search");
         }
     }
 })();
