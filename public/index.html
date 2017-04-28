@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,7 +15,7 @@
     <h2>Links:</h2>
     <ul>
         <li>
-            <a href="project/index.html">Project</a>
+            <a href="http://mooviews.herokuapp.com/#/">MooViews</a>
         </li>
         <li>
             <a href="assignment/index.html">Assignment</a>
@@ -26,5 +27,109 @@
             <a href="https://github.com/jmorx3/moran-jess-webdev">My GitHub</a>
         </li>
     </ul>
+-->
+
+    <!-- Bootstrap Core CSS -->
+    <link href="home/css/bootstrap.css" rel="stylesheet">
+    <!-- Slider CSS -->
+    <link href="home/css/flexslider.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="home/css/style.css" rel="stylesheet">
+
+    <!--
+    Author: W3layouts
+    Author URL: http://w3layouts.com
+    License: Creative Commons Attribution 3.0 Unported
+    License URL: http://creativecommons.org/licenses/by/3.0/
+    -->
+    <!DOCTYPE HTML>
+    <html>
+    <head>
+        <title>CS5610 - Web Development - Jess Moran</title>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="Pana Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+        <script src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/move-top.js"></script>
+        <script type="text/javascript" src="js/easing.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $(".scroll").click(function(event){
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                /*
+                 var defaults = {
+                 containerID: 'toTop', // fading element id
+                 containerHoverID: 'toTopHover', // fading element hover id
+                 scrollSpeed: 1200,
+                 easingType: 'linear'
+                 };
+                 */
+                $().UItoTop({ easingType: 'easeOutQuart' });
+            });
+        </script>
+    </head>
+    <body>
+    <!-- header -->
+    <div class="banner">
+        <div class="container">
+            <div class="head-nav">
+                <span class="menu"> </span>
+                <ul class="cl-effect-7">
+                    <li><a href="http://mooviews.herokuapp.com/#/">MOOVIEWS</a></li>
+                    <li><a href="assignment/index.html">Assignment</a></li>
+                    <li><a href="test/index.html">Test MongoDB</a></li>
+                    <li><a href="https://github.com/jmorx3/moran-jess-webdev">My GitHub</a></li>
+                    <div class="clearfix"> </div>
+                </ul>
+            </div>
+            <!-- script-for-nav -->
+            <script>
+                $( "span.menu" ).click(function() {
+                    $( ".head-nav ul" ).slideToggle(300, function() {
+                        // Animation complete.
+                    });
+                });
+            </script>
+            <!-- script-for-nav -->
+
+            <div class="banner-info">
+
+                <div class="logo">
+                    <h1><a href="index.html">CS5610</a></h1>
+                </div>
+                <h5>Jess Moran - Spring 2017 - Web Development</h5>
+                <div class="scroll">
+                    <a href="#contact" class="scroll"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+
+    <!-- footer -->
+    <div class="footer" id="contact">
+        <div class="container">
+            <p>Copyrights © 2015 Pana. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+        </div>
+        <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 0;"></span> <span id="toTopHover" style="opacity: 0;"> </span></a>
+    </div>
+    <!-- footer -->
+    </body>
+    </html>
+
+
+
 </body>
 </html>
